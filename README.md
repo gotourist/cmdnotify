@@ -1,4 +1,4 @@
-# CmdNotify Command-line Notification sender application
+# CmdNotify
 
 CmdNotify is Command-line Notification sender application 
 
@@ -11,47 +11,15 @@ go get github.com/gotourist/cmdnotify
 ```
 
 ## Usage
-Create .env file and Add your application configuration to your .env file in the root of your project:
+Create .env file and Add your application configuration to your .env file in the root of your project like below:
 
 ```bash
-//to send email
 FROM = sample@example.com //sender email address
 PASSWORD = xxxxxxx //sender email password
 SMPTHOST = smpt.gmail.com //sender email provider host
 SMPTPORT = xxx //sender email provider port
-
-//to send sms messages
 APIKEY = xxxxxx //vonage apikey
 APISECRET = xxxxxx //vonage apisecret
-```
-
-Then in your Go app you can do something like
-
-```golang
-//get environmetal variable for email
-	e := godotenv.Load("./.env")
-	if e != nil {
-		fmt.Println(e)
-		log.Println(e)
-	}
-	// Sender data.
-	from := os.Getenv("FROM")         //sender email address
-	password := os.Getenv("PASSWORD") //sender email password
-
-	// smtp server configuration.
-	smtpHost := os.Getenv("SMPTHOST") //sender email smpt host
-	smtpPort := os.Getenv("SMPTPORT") //sender email smpt port
-```
-
-```golang
-//get environmetal variable for sms messages
-	e := godotenv.Load("./.env")
-	if e != nil {
-		fmt.Println(e)
-		log.Println(e)
-	}
-	api_Key := os.Getenv("APIKEY")       //vonage api_key
-	api_Secret := os.Getenv("APISECRET") //vonage api_secret
 ```
 
 ## Command Mode Usage
