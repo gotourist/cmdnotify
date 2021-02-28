@@ -1,18 +1,1 @@
-2021/02/28 14:25:34 Error occured while sending message:
-2021/02/28 14:25:34 <nil>
-2021/02/28 14:25:34 { [{9 Quota Exceeded - rejected}]}
-2021/02/28 14:26:17 Client email is not included
-2021/02/28 14:26:42 Email Sent!
-2021/02/28 14:47:41 Error while sending mail:  dial tcp: lookup smtp.gmail.com: Temporary failure in name resolution
-2021/02/28 14:47:41 dial tcp: lookup smtp.gmail.com: Temporary failure in name resolution
-2021/02/28 15:03:44 Error while sending mail:  dial tcp: lookup smtp.gmail.com: Temporary failure in name resolution
-2021/02/28 15:03:44 dial tcp: lookup smtp.gmail.com: Temporary failure in name resolution
-2021/02/28 15:04:38 expected 'sendmail' or 'sendsms' subcommands
-2021/02/28 15:04:48 Error while sending mail:  dial tcp: lookup smtp.gmail.com: Temporary failure in name resolution
-2021/02/28 15:04:48 dial tcp: lookup smtp.gmail.com: Temporary failure in name resolution
-2021/02/28 15:06:27 Error while sending mail:  dial tcp: lookup smtp.gmail.com: Temporary failure in name resolution
-2021/02/28 15:06:27 dial tcp: lookup smtp.gmail.com: Temporary failure in name resolution
-2021/02/28 15:07:07 Email Sent!
-2021/02/28 15:09:33 Email Sent!
-2021/02/28 15:09:46 Email Sent!
-2021/02/28 15:10:50 Email Sent!
+2021/02/28 20:16:17 Email Sent!
