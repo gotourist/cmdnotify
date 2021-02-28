@@ -22,7 +22,7 @@ APIKEY = xxxxxx //vonage apikey
 APISECRET = xxxxxx //vonage apisecret
 ```
 
-## Command Mode Usage
+## Command Mode Usage 1 version
 
 Assuming you've installed the command as above and now you are in $GOPATH/src/github.com/gotourist/aliftech/
 
@@ -38,15 +38,24 @@ if you want to send notification as sms use this command in linux
 ./send -type=sms -tel=998909998877 -product=car -cost=30000 -id=11
 ```
 
-if you want to send notification as email use this command in windows
+if you want to use command in windows change ./send command to send.exe
+
+## Command Mode Usage 2 version
+
+Assuming you've installed the command as above and now you are in $GOPATH/src/github.com/gotourist/aliftech/
+
+if you want to send notification as email use this command in linux
 
 ```bash
-send.exe -type=email -email=example@gmail.com -product=car -cost=30000 -id=11
+./tsend sendmail -email=example@gmail.com -product=car -cost=30000 -id=11
 ```
 
-if you want to send notification as sms use this command in windows
+if you want to send notification as sms use this command in linux
 
 ```bash
-send.exe -type=sms -tel=998909998877 -product=car -cost=30000 -id=11
+./send sendsms -tel=998909998877 -product=car -cost=30000 -id=11
 ```
+
+if you want to use command in windows change ./tsend command to tsend.exe
+
 
