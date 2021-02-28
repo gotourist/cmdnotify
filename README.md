@@ -53,7 +53,7 @@ if you want to send notification as email use this command in linux
 if you want to send notification as sms use this command in linux
 
 ```bash
-./send sendsms -tel=998909998877 -product=car -cost=30000 -id=11
+./tsend sendsms -tel=998909998877 -product=car -cost=30000 -id=11
 ```
 
 if you want to use command in windows change ./tsend command to tsend.exe
