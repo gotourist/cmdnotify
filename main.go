@@ -8,8 +8,8 @@ import (
 	"os"
 	"text/template"
 
-	"github.com/aliftech/mail"
-	"github.com/aliftech/sms"
+	"github.com/gotourist/cmdnotify/mail"
+	"github.com/gotourist/cmdnotify/sms"
 )
 
 type Client struct {
@@ -34,6 +34,7 @@ func main() {
 	var client Client
 	var purchase Purchase
 
+	//  2 version of command-line notification sender
 	sendmail := flag.NewFlagSet("sendmail", flag.ExitOnError)
 	email := sendmail.String("email", "", "An email of client")
 	mailpurchaseid := sendmail.Int("id", 0, "Purchase id")
@@ -41,7 +42,7 @@ func main() {
 	mailcost := sendmail.Int("cost", 0, "Cost of a product")
 
 	sendsms := flag.NewFlagSet("sendsms", flag.ExitOnError)
-	telnumber := sendsms.String("email", "", "An email of client")
+	telnumber := sendsms.String("email", "", "Telephone number of client")
 	smspurchaseid := sendsms.Int("id", 0, "Purchase id")
 	smsproduct := sendsms.String("product", "", "Product name")
 	smscost := sendsms.Int("cost", 0, "Cost of a product")
@@ -113,6 +114,7 @@ Cost: %d $`, purchase.Id, purchase.Product, purchase.Cost)
 		os.Exit(1)
 	}
 
+	//  1 version of command-line notification sender
 	// 	notificationtype := flag.String("type", "", "Notification type")
 	// 	email := flag.String("email", "", "An email of client")
 	// 	telnumber := flag.String("tel", "", "Telephone number of client")
