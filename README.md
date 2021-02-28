@@ -11,7 +11,7 @@ go get github.com/gotourist/cmdnotify
 ```
 
 ## Usage
-Create .env file and Add your application configuration to your .env file in the root of your project like below:
+Create .env file and Add your application configuration into .env file in the root of this project like below:
 
 ```bash
 FROM = sample@example.com //sender email address
@@ -24,7 +24,7 @@ APISECRET = xxxxxx //vonage apisecret
 
 ## Command Mode Usage 1 version
 
-Assuming you've installed the command as above and now you are in $GOPATH/src/github.com/gotourist/aliftech/
+Assuming you've installed the command as above and now you are in $GOPATH/src/github.com/gotourist/cmdnotify/
 
 if you want to send notification as email use this command in linux
 
@@ -42,7 +42,7 @@ if you want to use command in windows change ./send command to send.exe
 
 ## Command Mode Usage 2 version
 
-Assuming you've installed the command as above and now you are in $GOPATH/src/github.com/gotourist/aliftech/
+Assuming you've installed the command as above and now you are in $GOPATH/src/github.com/gotourist/cmdnotify/
 
 if you want to send notification as email use this command in linux
 
