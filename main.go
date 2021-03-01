@@ -42,7 +42,7 @@ func main() {
 	mailcost := sendmail.Int("cost", 0, "Cost of a product")
 
 	sendsms := flag.NewFlagSet("sendsms", flag.ExitOnError)
-	telnumber := sendsms.String("email", "", "Telephone number of client")
+	telnumber := sendsms.String("tel", "", "Telephone number of client")
 	smspurchaseid := sendsms.Int("id", 0, "Purchase id")
 	smsproduct := sendsms.String("product", "", "Product name")
 	smscost := sendsms.Int("cost", 0, "Cost of a product")
